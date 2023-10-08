@@ -49,8 +49,8 @@ public class PlaceObject : MonoBehaviour
             {
                 Pose pose = hit.pose;
                 GameObject gameObject = Instantiate(prefab, pose.position, pose.rotation);
-                
-                if(aRPlaneManager.GetPlane(hit.trackableId).alignment == PlaneAlignment.HorizontalUp)
+
+                if (aRPlaneManager.GetPlane(hit.trackableId).alignment == PlaneAlignment.HorizontalUp)
                 {
                     Vector3 postion = gameObject.transform.position;
                     postion.y = 0.0f;
